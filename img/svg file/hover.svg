@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="187" height="65" viewBox="0 0 187 65">
+  <g id="Group_133" data-name="Group 133" transform="translate(389 -953)">
+    <g id="Group_132" data-name="Group 132" transform="translate(-522 189)">
+      <g id="Group_126" data-name="Group 126">
+        <g id="Group_130" data-name="Group 130">
+          <g id="Rectangle_214" data-name="Rectangle 214" transform="translate(133 764)" fill="none" stroke="#000" stroke-width="5">
+            <rect width="187" height="65" rx="32.5" stroke="none"/>
+            <rect x="2.5" y="2.5" width="182" height="60" rx="30" fill="none"/>
+          </g>
+        </g>
+      </g>
+      <text id="Get_Started" data-name="Get Started" transform="translate(225 803)" font-size="22" font-family="SegoeUI, Segoe UI"><tspan x="-54.635" y="0">Get Started</tspan></text>
+    </g>
+  </g>
+</svg>

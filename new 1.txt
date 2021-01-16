@@ -1,0 +1,17 @@
+right-paip-neche:path20
+*     -*   -upre:p18
+*     -*top upre:p23
+*     -*top neche:p22
+
+left-*    -upre:p17
+*   -*     neche:p19
+*     -*top upre:p24
+*     -*top neche:p25
+
+
+cercel 3 p22
+*      2  p15
+*      1  p21
+*       1 er nech p27
+*        3 er neche p28
+border p14
