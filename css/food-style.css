@@ -1,0 +1,988 @@
+
+@import url('https://fonts.googleapis.com/css2?family=:ital,wght@1,300&display=swap');
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+body,html{
+
+    overflow:auto;
+	width:100%;
+	font-family:'Raleway', sans-serif;
+}
+
+html{
+	
+	scroll-behavior:smooth;
+}
+.container{
+
+	max-width:1540px;
+	margin:0 auto;
+	overflow:hidden;
+	padding:0 40px;
+	
+}
+.container2{
+
+	max-width:1440px;
+	margin:0 auto;
+	overflow:hidden;
+	padding:0 40px;
+	
+}
+#loading{
+	
+	position:fixed;
+	left:0;
+	top:0;
+	width:100%;
+	height:100vh;
+	background:#fff
+	url('../img/loading2.gif') no-repeat center;
+	z-index:999999;
+}
+.scrollup  i{
+		padding:10px 10px 15px 10px;
+		transform:rotate(360deg);
+		
+	}
+	.scrollup:hover{
+				color:white;
+		text-decoration:none;
+	}
+	.scrollup{
+		display:-webkit-flex;
+		display:-moz-flex;
+		display:-ms-flex;
+		display:-o-flex;
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		font-size:35px;
+		color:white;
+		text-decoration:none;
+		transition:.5s;
+		background:#FF9100;
+		position:fixed;
+		bottom:16px;
+		right:50px;
+		width:60px;
+		border-radius:50%;
+		opacity:0;
+		z-index:1;
+		text-decoration:none;
+	}
+	
+	.scrollup.active{
+		
+		bottom:32px;
+		pointer-events:auto;
+		opacity:1;
+		transform:translateY(-55px);
+	}
+
+
+
+.mobile-menu span{
+	  
+	color:#EE6D52;
+	font-size:34px;
+	display:none;
+	margin-top:15px;
+	margin-right: 14px;
+	
+}
+
+.mobile-menu span:hover{
+	
+	cursor:pointer;
+}
+
+.overlay{
+	width:0%;
+	height:100%;
+	position:fixed;
+	top:0;
+	left:0;
+	background-color:#FF9100;
+	z-index:1;
+	overflow:hidden;
+	transition:.5s;
+}
+
+
+.overlay a{
+	
+	text-decoration:none;
+	display:block;
+	font-size:25px;
+	text-transform:uppercase;
+	letter-spacing:3px;
+	color:white;
+	padding:1rem 0;
+}
+.overlay a:hover{
+	color:white;
+	
+}
+
+.overlay .closebtn{
+	position:absolute;
+	top:2rem;
+	right:70px;
+	font-size:70px;
+	color:white;
+}
+.overlay-content {
+    position: relative;
+    top: 20%;
+    width: 100%;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+header{
+	     position:relative;
+	    background-image:url('../img/food-img/bac1.png');
+		background-size:container;
+		max-width:100%;
+		background-repeat:no-repeat;
+		background-position:left bottom;
+	     min-height:1200px;
+		
+	
+}
+
+nav{
+	max-width:100%;
+	display:flex;
+	 justify-content:space-between;
+	align-items:center;
+	height:100%;
+	margin-top:32px;
+}
+
+nav ul{
+	
+	
+    display: flex;
+
+    text-align: right;
+    margin-left: 315px;
+}
+nav ul li{
+	margin-top: 14px;
+	list-style:none;
+}
+nav ul li a{
+
+	color:#302E29;
+	font-size:22px;
+	font-weight:bold;
+	line-height:26.4px;
+	text-transform:capitalize;
+
+	font-family:Raleway;
+		list-style:none;
+		text-decoration:none;
+	text-decoration: none;
+   padding-left:85px;
+   transition:.4s;
+}
+.menu li:hover a{
+ color:#FF9100;
+
+
+}
+header .active{
+	
+ color:#FF9100;	
+}
+.top-btn{
+	position:relative;
+
+	
+	background-color:#FF9100;
+	padding:12px 30px 11px 0px;
+	border-radius:35px;
+}
+
+.top-btn img{
+	padding-left:30px;
+	
+}
+
+.header-content-top{
+	
+	display:flex;
+	flex-wrap:wrap;
+}
+
+.header-content-top-items{
+	
+	flex:1 1 350px;
+
+
+}
+
+
+.header-title-content{
+
+    margin-top: 196px;
+    margin-right: 150px;
+
+}
+.header-title-content h2{
+	color:#302E29;
+	font-size:67px;
+	font-weight:bold;
+	line-height:87px;
+	
+	font-family:Raleway;
+	
+}
+
+.header-title-content h2::before{
+	content:"Welcome";
+	color:#FF9100;
+
+	font-weight:bold;
+	
+	
+}
+
+.header-title-content p{
+	color:#858585;
+	font-size:22px;
+	font-weight:400;
+	line-height:48px;
+	font-family:Raleway;
+	    margin-right:50px;
+}
+.btn{
+	
+	
+	    margin-left: -11px;
+			 margin-top:121px; 
+}
+.btn a{
+			box-shadow:7.25px 27.05px 76px rgba(255,145,0,0.30);
+	color:#FFFFFF;
+text-decoration:none;
+	font-size:20px;
+	font-weight:600;
+	line-height:44px;
+	font-family:Raleway;
+	background-color:#FF9100;
+	padding:20px 38px 20px 38px;
+	border-radius:35px;
+}
+.btn img{
+	padding-left:20px;
+	
+}
+
+.site-image {
+    margin-left: 36px;
+	margin-top:15px;
+}
+.time{
+	 margin-top:209px;   
+	
+}
+.time h3{
+	color:#302E29;
+
+	font-size:39px;
+	font-weight:700;
+	line-height:53px;
+	font-family:Raleway;
+	
+}
+.time p{
+	color:#858585;
+	font-size:30px;
+	font-weight:400;
+	line-height:53px;
+	font-family:roboto;
+	   
+	
+}
+
+
+.food-items-section{
+	 margin-top:28px;   
+	
+}
+.food-items1{
+	width:303px;
+	height:100px;
+background-color:#FFEACC;
+padding:14px 22px;
+	border-radius:15px;
+	transition:.6s;
+}
+
+
+.food-items span{
+	color:#302E29;
+margin-left:10px;
+	font-size:21px;
+	font-weight:600;
+	line-height:44px;
+	font-family:Raleway;
+
+}
+.food-items .food-items1:hover{
+background-color:#FF9100;
+	
+		box-shadow:7.25px 27.05px 76px rgba(255,145,0,0.30);
+}
+.food-items .food-items1:hover span{
+	color:white;
+	
+	
+}
+
+
+
+.about-section{
+	 position:relative;
+	    background-image:url('../img/food-img/bac2.png');
+		background-size:container;
+		max-width:100%;
+		background-repeat:no-repeat;
+		background-position:right;
+	     min-height:880px;
+		margin-top:200px;
+	
+}
+.about-content {
+    margin-top: 120px;
+   max-width:600x;
+}
+.about-content h2{
+	
+	color:#302E29;
+	font-size:62px;
+	font-weight:600;
+	line-height:82px;
+	    margin-right: 54px;
+	font-family:Raleway;
+	margin-bottom:40px;
+	
+}
+
+.about-content p{
+	
+	color:#858585;
+	font-size:22px;
+	font-weight:400;
+	line-height:48px;
+	font-family:Raleway;
+	   margin-right: -71px;
+	
+}
+
+.abt-btn a{
+	box-shadow:7.25px 27.05px 76px rgba(255,145,0,0.20);
+    color:#FFFFFF;
+   text-decoration:none;
+	font-size:20px;
+	font-weight:500;
+	line-height:154px;
+	font-family:Raleway;
+	background-color:#FF9100;
+	padding:18px 42px 18px 42px;
+	border-radius:35px;
+	margin-top:10px;
+}
+
+.icon-section{
+	
+	margin-top:70px;
+	margin-bottom:132px;
+}
+.icon-box:hover{
+	background-color:#FF9100;
+	color:white;
+	box-shadow:0 49px 114px rgba(255,145,0,0.10);
+}
+
+.icon-box:hover path,
+.icon-box:hover p,
+.icon-box:hover h2
+{
+	fill:white;
+	color:white;
+}
+
+.icon-box{
+	position:relative;
+	max-width:463px;
+	min-height:463px;
+	text-align:center;
+	background:#FFFAF3;
+
+	border-radius:1000px;
+	padding:90px 90px;
+
+	margin-left:30px;
+		transition:.6s;
+}
+.icon-box h2{
+	color:#302E29;
+	font-size:30px;
+	font-weight:600;
+	line-height:82px;
+	font-family:Raleway;
+	align-items:center;
+	padding-top:10px;
+}
+
+.icon-box p{
+	color:#858585;
+	font-size:18px;
+	font-weight:400;
+	line-height:30px;
+	font-family:Raleway;
+	  
+
+}
+
+
+
+
+
+
+
+
+
+
+.rating-section{
+	margin-top:200px;
+		 position:relative;
+	    background-image:url('../img/food-img/bac3.png');
+		background-size:container;
+		max-width:100%;
+		background-repeat:no-repeat;
+		background-position:center bottom;
+	     
+		margin-top:200px;
+	   min-height:896px;
+    padding-bottom:100px;
+       padding-top:100px;
+}
+
+	.rating-box{
+	position:relative;
+	max-width:330px;
+	min-height:533px;
+	text-align:center;
+	background:#ffffff;
+
+	border-radius:30px;
+	padding:0px 10px 60px 10px;
+	box-shadow:0 49px 110px rgba(255,145,0,0.10);
+margin-left:40px;
+	margin-top:170px;
+	
+		margin-bottom:100px;
+		transition:.6s;
+}
+.rating-box:hover{
+	background-color:#FF9100;
+	color:white;
+}
+
+.rating-box:hover path,
+.rating-box:hover p,
+.rating-box:hover a,
+.rating-box:hover h2
+
+{
+	
+	fill:black;
+	color:white;
+}
+
+.rating-box:hover a
+{
+	background:white;
+	color:#FF9100;
+}
+.rating-title h2{
+
+	color:#302E29;
+	font-size:55px;
+	font-weight:600;
+	line-height:82px;
+	font-family:Raleway;
+	text-align:center;
+	padding-bottom:100px;
+	padding-top:70px;
+}
+.rating-box h2{
+	color:#302E29;
+	font-size:30px;
+	font-weight:600;
+	line-height:82px;
+	font-family:Raleway;
+	align-items:center;
+	padding-top:10px;
+}
+
+.rating-box p{
+	color:#858585;
+	font-size:18px;
+	font-weight:400;
+	line-height:30px;
+	font-family:Raleway;
+	 
+
+}
+
+.rating-box img{
+	margin-top:-180px;
+	line-height:82px;
+    margin-left: -23px;
+
+}
+.rating-box span{
+	margin-bottom:20px;
+	 line-height:92px;
+
+}
+.rating-btn a{
+	
+	
+    box-shadow:7.25px 27.05px 76px rgba(255,145,0,0.30);
+	color:#FFFFFF;
+    text-decoration:none;
+	font-size:20px;
+	font-weight:600;
+	line-height:44px;
+	font-family:Raleway;
+	background-color:#FF9100;
+	padding:15px 52px 15px 52px;
+	border-radius:35px;
+}
+
+.show-more-btn {
+text-align:center;}
+
+.show-more-btn a{
+	text-align:center;
+	 box-shadow:7.25px 27.05px 76px rgba(255,145,0,0.30);
+	color:#FFFFFF;
+    text-decoration:none;
+	font-size:20px;
+	font-weight:600;
+	line-height:64px;
+	font-family:Raleway;
+	background-color:#FF9100;
+	padding:15px 52px 15px 52px;
+	border-radius:35px;
+}
+
+
+
+
+
+
+
+.about-section2{
+	 position:relative;
+	    background-image:url('../img/food-img/bac4.png');
+		background-size:container;
+		max-width:100%;
+		background-repeat:no-repeat;
+		background-position:bottom left;
+	     min-height:880px;
+		margin-top:200px;
+	
+}
+.about-content2 {
+    margin-top: 120px;
+   max-width:600px;
+}
+.about-content2 h2{
+	
+	color:#302E29;
+	font-size:62px;
+	font-weight:600;
+	line-height:82px;
+	margin-right: 54px;
+	font-family:Raleway;
+	margin-bottom:40px;
+	
+}
+
+.about-content2 p{
+	
+	color:#858585;
+	font-size:22px;
+	font-weight:400;
+	line-height:48px;
+	font-family:Raleway;
+	   margin-right: -71px;
+	
+}
+
+.tk-btn{
+display:flex;
+margin-top:45px;
+margin-left:-50px;
+}
+
+.tk-btn a{
+display:flex;
+
+	margin-left:50px;
+}
+
+
+.testimonial-section{
+	position:relative;
+	    background-image:url('../img/food-img/bac5.png');
+		background-size:container;
+		max-width:100%;
+		background-repeat:no-repeat;
+		background-position:bottom left;
+	     min-height:985px;
+		margin-top:200px;
+
+}
+
+
+.testi-content1{
+	max-width:553px;
+	min-height:349px;
+	padding:50px 50px 0px 50px;
+text-align:right;
+background-color:white;
+	 box-shadow:7.25px 27.05px 76px rgba(255,145,0,0.10);
+	 border-radius:30px;
+
+margin:10px 10px 100px 10px;
+}
+
+.testi-title h2{
+
+	color:#302E29;
+	font-size:55px;
+	font-weight:600;
+	line-height:82px;
+	font-family:Raleway;
+	text-align:center;
+	padding-bottom:150px;
+	padding-top:100px;
+}
+.testi-content1 h2{
+padding-right:52px;
+	color:#302E29;
+	font-size:25px;
+	font-weight:600;
+	line-height:42px;
+	font-family:Raleway;
+	text-align:right;
+}
+
+.testi-content1 span{
+
+
+	padding-right:52px;
+	
+}
+
+.testi-content1 p{
+	padding-top:25px;
+padding-right:50px;
+	color:#858585;
+	font-size:20px;
+	font-weight:400;
+	line-height:48px;
+	font-family:Raleway;
+	text-align:left;
+}
+
+
+
+
+
+
+.footer-section{
+		position:relative;
+	    background-image:url('../img/food-img/footer-bac.png');
+		background-size:container;
+		max-width:100%;
+		background-repeat:no-repeat;
+		background-position:center bottom;
+	     min-height:355px;
+		margin-top:150px;
+	
+}
+
+.menu-section h2{
+	color:#342E36;
+	font-size:20px;
+	font-weight:600;
+	line-height:35px;
+	font-family:Raleway;
+	
+	padding-bottom:20px;
+	
+}
+
+
+.footer-menu1 li   {
+	list-style:none;
+	
+}
+
+
+.footer-menu1 li a{
+	list-style:none;
+	color:#342E36;
+	font-size:18px;
+	font-weight:400;
+	line-height:40px;
+	font-family:Raleway;
+	text-decoration:none; 
+}
+
+.footer-sociis{
+	margin-left:-30px;
+	margin-bottom:60px;
+}
+
+
+.footer-sociis img{
+	margin-left:30px;
+	
+	
+}
+.footer-bottom-section{
+	background-color:#FF9100;
+}
+.footer-bottom{
+	
+	
+}
+.footer-bottom p{
+	color:#342E36;
+	font-size:26px;
+	font-weight:500;
+	line-height:82px;
+	font-family:Raleway;
+	margin-top:15px;
+}
+.footer-bottom p:nth-child(2){
+	content:"";
+	text-align:right;
+}
+
+
+
+
+.one{
+	
+	-webkit-animation-delay:.1s;
+	-moz-animation-delay:.1s;
+	animation-delay:.1s;
+}
+
+.tow{
+	
+	-webkit-animation-delay:.3s;
+	-moz-animation-delay:.3s;
+	animation-delay:.3s;
+}
+
+.three{
+	
+	-webkit-animation-delay:.4s;
+	-moz-animation-delay:.4s;
+	animation-delay:.4s;
+}
+
+.four{
+	
+	-webkit-animation-delay:2.7s;
+	-moz-animation-delay:2.7s;
+	animation-delay:2.7s;
+}
+
+
+.animate{
+	-webkit-animation-delay:1s;
+	animation-duration:1s;
+	animation-fill-mode:both;
+	-webkit-animation-fill-mode:both;
+	
+}
+
+@-webkit-keyframes fadeLeft{
+	from{
+		
+		opacity:0;
+		-webkit-transform:translate3d(-100%,0,0);
+         transform:translate3d(-100%,0,0);
+	}
+	
+	to{
+		
+		opacity:1;
+			-webkit-transform:none;
+         transform:none;
+	}
+	
+}
+
+@keyframes fadeLeft{
+	from{
+		
+		opacity:0;
+		-webkit-transform:translate3d(-100%,0,0);
+         transform:translate3d(-100%,0,0);
+	}
+	
+	to{
+		
+		opacity:1;
+			-webkit-transform:none;
+         transform:none;
+	}
+	
+}
+
+.fadeLeft{
+		-webkit-animation-name:fadeLeft;
+			animation-name:fadeLeft;
+		
+}
+@-webkit-keyframes fadeUp{
+	from{
+		
+		opacity:0;
+		-webkit-transform:translate3d(0,100%,0);
+         transform:translate3d(0,100%,0);
+	}
+	
+	to{
+		
+		opacity:1;
+			-webkit-transform:none;
+         transform:none;
+	}
+	
+}
+
+@keyframes fadeUP{
+	from{
+		
+		opacity:0;
+		-webkit-transform:translate3d(0,100%,0);
+         transform:translate3d(0,100%,0);
+	}
+	
+	to{
+		
+		opacity:1;
+			-webkit-transform:none;
+         transform:none;
+	}
+	
+}
+
+.fadeUP{
+		-webkit-animation-name:fadeUP;
+			animation-name:fadeUP;
+		
+}
+
+
+
+
+@-webkit-keyframes faderight{
+	from{
+		
+		opacity:0;
+		-webkit-transform:translate3d(100%,0,0);
+         transform:translate3d(100%,0,0);
+	}
+	
+	to{
+		
+		opacity:1;
+			-webkit-transform:none;
+         transform:none;
+	}
+	
+}
+
+@keyframes faderight{
+	from{
+		
+		opacity:0;
+		-webkit-transform:translate3d(100%,0,0);
+         transform:translate3d(100%,0,0);
+	}
+	
+	to{
+		
+		opacity:1;
+			-webkit-transform:none;
+         transform:none;
+	}
+	
+}
+
+.faderight{
+		-webkit-animation-name:faderight;
+			animation-name:faderight;
+		
+}
+
+
+@-webkit-keyframes fadeUp{
+	from{
+		
+		opacity:0;
+		-webkit-transform:translate3d(0,100%,0);
+         transform:translate3d(0,100%,0);
+	}
+	
+	to{
+		
+		opacity:1;
+			-webkit-transform:none;
+         transform:none;
+	}
+	
+}
+
+@keyframes fadeUP{
+	from{
+		
+		opacity:0;
+		-webkit-transform:translate3d(0,100%,0);
+         transform:translate3d(0,100%,0);
+	}
+	
+	to{
+		
+		opacity:1;
+			-webkit-transform:none;
+         transform:none;
+	}
+	
+}
+
+.fadeUP{
+		-webkit-animation-name:fadeUP;
+			animation-name:fadeUP;
+		
+}
